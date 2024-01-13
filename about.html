@@ -1,33 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design office</title>
-</head>
-<link rel="stylesheet" href="about.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-<body>
-
-  <nav>
-    <img src="./assets/Design-fficeone peice-2024.png" alt="" width="120px" class="logo">
-    <ul>
-      <li><a href="main.html">Home <i class="fas fa-home"></i></a></li>
-      <li><a href="about.html">About <i class="far fa-comment-dots"></i></a></li>
-      <li><a href="#">Realization <i class="fas fa-chevron-circle-down"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design office</title>
+  </head>
+  <link rel="stylesheet" href="main.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  />
+  <body>
+    <nav>
+      <img src="logo1.png" alt="" width="120px" class="logo" />
       <ul>
-        <li><a href="2Dmoel.html">2Dmodel</a></li>
-        <li><a href="3Dmodel.html">3Dmodel</a></li>
+        <li>
+          <a href="main.html">Home <i class="fas fa-home"></i></a>
+        </li>
+        <li>
+          <a href="about.html">About <i class="far fa-comment-dots"></i></a>
+        </li>
+        <li>
+          <a href="#">Realisation <i class="fas fa-chevron-circle-down"></i></a>
+          <ul>
+            <li><a href="main.html" >2Dmodel</a></li>
+            <li><a href="main.html" >3Dmodel</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">contact <i class="far fa-user"></i></i></a>
+          <ul>
+            <li><a href="message.html">Message</a></li>
+            <li><a href="inscription.html">LOGIN</a></li>
+          </ul>
+        </li>
       </ul>
-      </li>
-      <li><a href="contact.html">contact  <i class="far fa-user"></i></a></li>
-    </ul>
-  </nav>
+    </nav>
+    <hr>
   <div>
-   <h1>Our website give you a various model and structure for your building 
-    between 3D & 2D model also you can give us your ideas and we will do the rest
+   <h1>This website created by Asma , Laith .
+    Our website give you a various model and structure for your building 
+    between 3D & 2D model also you can give us your ideas and we will do the rest.
+    To make sure for all visiters that our website stil in dev mod . 
    </h1>
 </div>
+
+
+<style>
+    .logo{
+    position: relative;
+    left:20px;
+
+  }
+  nav{
+    display: contents;
+   width: 100%;
+   height: 80px;
+   position:fixed;
+   border-radius: 1px solid rgb(171, 118, 125) ;
+   font-family: 'Poppins', sans-serif;
+  }
+
+  ul{
+    float: right;
+    display: flex;
+    list-style: none;
+
+  }
+  nav ul ul li a{
+  position: relative;
+  left: -35px;
+}
+  nav ul li a{
+    color: bisque;
+    line-height: 60px;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: left 10px; ;
+
+  }
+  nav ul li a:hover{
+  background-color:rgba(79, 187, 234, 0.844) ;
+  }
+  body{
+    background-image: url('about1.png');
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+  }
+  nav ul li:hover > ul{
+    display: block;
+  }
+
+  nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+  nav ul ul li a{
+    position: relative;
+    left: -50px;
+  }
+  .map1{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+
+    background-color: lightblue;
+  }
+
+  div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    margin-left: -600px;
+
+    
+    
+  }
+h1{
+    border-radius: 1px solid rgb(171, 118, 125) ;
+    width:700px;
+    padding: 60px;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 6px;
+    margin-right: 10px;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+
+    color: bisque;
+
+  }
+  .welcome{
+    width: 500px;
+    position: fixed;
+    position: relative;
+    top: -300px;
+
+}
+</style>
 <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image3D</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+      }
+
+      #galleryContainer {
+        display: flex;
+        overflow: hidden;
+        width: 150vw; 
+        height: 100vh; 
+      }
+
+      #imageContainer {
+        display: flex;
+        transition: transform 1s ease; 
+      }
+
+      img {
+        width: 100vw; 
+        height: auto; 
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="galleryContainer">
+      <div id="imageContainer">
+        
+      </div>
+    </div>
+
+    <script>
+      
+      const images = ["3d1.jpg", "3d2.jpg", "3d3.jpg", "3d4.png", "3d5.jpg" , "3d6.jpg" ]; // Add more image filenames as needed
+
+      
+      const imageContainer = document.getElementById("imageContainer");
+      let currentIndex = 0;
+
+      
+      function changeImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        const imageUrl = images[currentIndex];
+        imageContainer.style.transform = `translateX(-${currentIndex * 100}vw)`;
+      }
+
+      
+      for (let i = 0; i < images.length; i++) {
+        const imgElement = document.createElement("img");
+        imgElement.src = images[i];
+        imageContainer.appendChild(imgElement);
+      }
+
+      
+      setInterval(changeImage, 3000);
+    </script>
+  </body>
+</html>

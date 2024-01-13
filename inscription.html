@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+    <script src='main.js'></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('fond.png');
+      background-size: 100% 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #registration-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 16px;
+      align-self: flex-start;
+    }
+
+    .radio-group label {
+      margin-right: 8px;
+    }
+
+    textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      resize: vertical; 
+      height: 100px; 
+      margin-bottom: 16px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .description {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div id="registration-container">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="name" name="firstName" placeholder="Enter your first name">
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastname" name="lastName" placeholder="Enter your last name">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter your password  more than 5 caracters">
+
+  <label for="phoneNumber">Phone Number:</label>
+  <input type="tel" id="phone" name="phoneNumber" placeholder="Enter your phone number">
+
+  <div class="radio-group">
+    <label for="professional">Professional:</label>
+    <input type="radio" id="pro" name="userType" value="professional">
+
+    <label for="individual">Individual:</label>
+    <input type="radio" id="ind" name="userType" value="individual">
+  </div>
+
+  <div class="radio-group" >
+    
+    <label for="masculin">Masculin:</label>
+    <input type="radio" id="masculin" name="gender" value="masculin">
+
+    <label for="feminin">Feminin:</label>
+    <input type="radio" id="feminin" name="gender" value="feminin">
+  </div>
+
+  <label for="plan">write your plan with us:</label>
+  <textarea id="plan" name="plan" rows="5" placeholder="Enter additional information here"></textarea>
+<tr>
+  <td>
+  <button onclick="registrer()">Register</button>
+  </td>
+   <br>
+
+  <td>
+    <a href="main.html"><button >return to home</button></a>
+  </td>
+  </tr>
+</div>
+
+
+</body>
+</html>
+
+

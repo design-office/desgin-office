@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message</title>
+  <script src='main.js'></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('inscri1.jpg');
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #info-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="info-container">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name">
+
+  <label for="cin">CIN:</label>
+  <input type="text" id="cin" name="cin" placeholder="Enter your CIN">
+
+  <label for="gmail">Gmail:</label>
+  <input type="email" id="gmail" name="gmail" placeholder="Enter your Gmail">
+
+  <label for="message">you can send a message from here </label>
+  <textarea id="message" name="additionalInfo" rows="5" placeholder="Enter your message here"></textarea>
+<tr>
+  <td>
+  <button onclick="verif()">Envoyer votre message</button>
+  </td>
+  <br>
+
+  <td>
+    <a href="main.html"><button >return to home</button></a>
+    <a href="mailto:"></a>
+  </td>
+  
+  </tr>
+  
+</div>
+</body>
+</html>
